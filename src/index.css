@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+body {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  color: #082487;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+button {
+  cursor: pointer;
+  outline: none !important;
+}
+a {
+  display: inline-block;
+}
+a:hover {
+  text-decoration: none;
+}
+/* common classes */
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  text-align: center;
+}
+.inner {
+  padding: 15px;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/* Custom Slider */
+.slick-prev,
+.slick-next {
+  width: 80px;
+  height: 80px;
+}
+.slick-prev:hover:before,
+.slick-next:hover:before {
+  color: #f6732f;
+}
+.slick-next {
+  right: -120px;
+}
+.slick-prev {
+  left: -120px;
+}
+.slick-prev:before,
+.slick-next:before {
+  color: #082487;
+  font-size: 80px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  position: relative;
+  top: -8px;
+  transition: 0.2s ease;
+}
+.slick-prev:before {
+  content: "‹";
+}
+.slick-next:before {
+  content: "›";
+}
+@media (max-width: 1220px) {
+  .slick-prev,
+  .slick-next {
+    width: 60px;
+  }
+  .slick-next {
+    right: -50px;
+  }
+  .slick-prev {
+    left: -50px;
+  }
+}
+@media (max-width: 1080px) {
+  .slick-next {
+    right: -30px;
+  }
+  .slick-prev {
+    left: -30px;
+  }
+}
+@media (max-width: 1080px) {
+  .slick-prev,
+  .slick-next {
+    width: 40px;
+  }
+}
+/* font */
+.fw-500 {
+  font-weight: 500;
+}
+.fw-600 {
+  font-weight: 600;
+}
